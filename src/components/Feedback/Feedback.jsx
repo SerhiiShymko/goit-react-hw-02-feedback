@@ -35,7 +35,7 @@ class Feedback extends Component {
           </button>
         </div>
         <h2>Statistics</h2>
-        <ul>
+        <ul className={css.list}>
           <li>
             Good: <p>{this.state.good}</p>
           </li>
