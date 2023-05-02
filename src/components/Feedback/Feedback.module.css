@@ -1,0 +1,10 @@
+.button__state {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* .wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+} */
