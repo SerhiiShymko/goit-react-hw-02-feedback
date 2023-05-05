@@ -13,4 +13,4 @@ Warning.prototype = {
   message: PropTypes.string.isRequired,
 };
 
-export default Warning;
+// export default Warning;

@@ -2,7 +2,7 @@ import FeedbackOptions from './FeedbackOptions';
 import Section from './Section';
 import { Component } from 'react';
 import Statistics from './Statistics';
-import Warning from './Warning';
+// import Warning from './Warning';
 import css from './App.module.css';
 
 class App extends Component {
@@ -49,17 +49,13 @@ class App extends Component {
         </Section>
 
         <Section title="Statistics">
-          {totalFeedback > 0 ? (
-            <Statistics
-              good={good}
-              neutral={neutral}
-              bad={bad}
-              total={totalFeedback}
-              positivePercentage={positiveFeedbackPercentage}
-            />
-          ) : (
-            <Warning message="There is not feedback" />
-          )}
+          <Statistics
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={totalFeedback}
+            positivePercentage={positiveFeedbackPercentage}
+          />
         </Section>
       </div>
     );
