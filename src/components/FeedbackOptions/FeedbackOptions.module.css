@@ -1,4 +1,4 @@
-button {
+.button {
   cursor: pointer;
    
   display: inline-block;
@@ -21,6 +21,10 @@ button {
 
   transition: background-color 0.3s ease 0s;
 }
+.button:hover,
+.button:focus {
+  background-color: #375474;
+}
 
 .list {
   padding-top: 30px;
@@ -36,7 +40,3 @@ button {
   margin-right: 0;
 }
 
-.button:hover,
-.button:focus {
-  background-color: #375474;
-}

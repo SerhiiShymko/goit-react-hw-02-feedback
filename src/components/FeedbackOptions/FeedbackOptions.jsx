@@ -7,7 +7,7 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
       {options.map(option => (
         <li className={css.item} key={option}>
           <button
-            className={css['button__state']}
+            className={css.button}
             type="button"
             name={option}
             onClick={onLeaveFeedback}
