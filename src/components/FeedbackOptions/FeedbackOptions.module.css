@@ -1,11 +1,12 @@
 button {
   cursor: pointer;
-  background-color: inherit;
-
+   
   display: inline-block;
   flex: 0 0 auto;
   text-align: center;
   padding: 16px 30px;
+  width: 150px;
+
 
   letter-spacing: 2px;
   font-weight: 500;
@@ -14,15 +15,28 @@ button {
   /* 22/14 */
 
   color: #fff;
-  background-color: #3d96f4;
-  border-radius: 50px;
+  background-color: #536272;
+  border: none;
+  border-radius: 15px;
 
   transition: background-color 0.3s ease 0s;
 }
 
-.button__state {
+.list {
   padding-top: 30px;
   padding-bottom: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  margin-right: 30px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #375474;
 }

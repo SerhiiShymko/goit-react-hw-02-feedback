@@ -1,19 +1,11 @@
-/* .wrapper {
-  min-height: 100%;
-  display: flex;
+.wrapper {
+  width: 700px;
+    display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: clip;
+  
+  border: 2px solid #000
+  ;
 }
-ul {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-}
-li {
-  display: flex;
-  flex-direction: row;
-  padding-top: 20px;
-}
-p {
-  padding-left: 20px;
-} */

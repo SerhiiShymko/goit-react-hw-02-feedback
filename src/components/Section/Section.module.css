@@ -1,12 +1,32 @@
-.section {
-  margin-bottom: 50px;
-}
-
-.section:last-child {
-  margin-bottom: 0;
-}
-
 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   margin-bottom: 30px;
+}
+ul {
+   display: flex;
+  flex-direction: column;
+
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.43;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.43;
+}
+
+p {
+  padding-left: 20px;
+
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.43;
 }

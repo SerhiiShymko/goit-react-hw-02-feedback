@@ -1,8 +1,8 @@
-import FeedbackOptions from './FeedbackOptions';
-import Section from './Section';
 import { Component } from 'react';
-import Statistics from './Statistics';
-// import Warning from './Warning';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
+import Section from './Section/Section';
+import Statistics from './Statistics/Statistics';
+import Warning from './Warning/Warning';
 import css from './App.module.css';
 
 class App extends Component {
@@ -49,13 +49,17 @@ class App extends Component {
         </Section>
 
         <Section title="Statistics">
-          <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            total={totalFeedback}
-            positivePercentage={positiveFeedbackPercentage}
-          />
+          {totalFeedback > 0 ? (
+            <Statistics
+              good={good}
+              neutral={neutral}
+              bad={bad}
+              total={totalFeedback}
+              positivePercentage={positiveFeedbackPercentage}
+            />
+          ) : (
+            <Warning message="There is not feedback" />
+          )}
         </Section>
       </div>
     );
