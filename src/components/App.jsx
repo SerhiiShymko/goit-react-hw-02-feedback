@@ -1,5 +1,6 @@
-import Feedback from 'components/Feedback/Feedback';
-// import Section from './components/Section/Section';
+// import Feedback from 'components/Feedback/Feedback';
+// import Section from './Section';
+import FeedbackOptions from './FeedbackOptions';
 
 export const App = () => {
   return (
@@ -14,7 +15,7 @@ export const App = () => {
       }}
     >
       <section>
-        <Feedback />
+        <FeedbackOptions />
       </section>
     </div>
   );
