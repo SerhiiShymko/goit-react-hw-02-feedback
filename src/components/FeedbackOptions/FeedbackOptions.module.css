@@ -1,12 +1,11 @@
 .button {
   cursor: pointer;
-   
+
   display: inline-block;
   flex: 0 0 auto;
   text-align: center;
   padding: 16px 30px;
   width: 150px;
-
 
   letter-spacing: 2px;
   font-weight: 500;
@@ -15,7 +14,7 @@
   /* 22/14 */
 
   color: #fff;
-  background-color: #536272;
+  background-color: #114882;
   border: none;
   border-radius: 15px;
 
@@ -23,12 +22,12 @@
 }
 .button:hover,
 .button:focus {
-  background-color: #375474;
+  background-color: #5ca6f5;
 }
 
 .list {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
 }
@@ -39,4 +38,3 @@
 .item:last-child {
   margin-right: 0;
 }
-
